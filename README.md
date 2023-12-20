@@ -22,17 +22,9 @@ https://github.com/mehtaheino/Chocolate-3D-Printer/wiki
 
 ---
 ## MANU 3D Printer, an extrusion-based FFF printer
+Please refer to the following links for documentation specific to the MANU extrusion-based FFF printer
 
-* [Step 1. Unboxing and getting the printer ready](https://github.com/mehtaheino/MANU-3D-Printer/wiki/Step-1.-Unboxing-and-getting-the-printer-ready)
-* [Step 2. Connecting to Wi‐Fi on MANU 3D Printer](https://github.com/mehtaheino/MANU-3D-Printer/wiki/Step-2.-Connecting-to-Wi%E2%80%90Fi-on-MANU-3D-Printer)
-* [Step 3: Simplify3D Setup for MANU 3D Printer 1.0](https://github.com/mehtaheino/MANU-3D-Printer/wiki/Step-3:-Simplify3D-Setup-for-MANU-3D-Printer-1.0)
-* [Step 4. First print on MANU Easy](https://github.com/mehtaheino/MANU-3D-Printer/wiki/Step-4.-First-print-on-MANU-Easy)
-* [Step 5. Material selection guide](https://github.com/mehtaheino/MANU-3D-Printer/wiki/Step-5.-Material-selection-guide)
-* [Step 6. Slicing best practices Generating Gcode](https://github.com/mehtaheino/MANU-3D-Printer/wiki/Step-6.-Slicing-best-practices---Generating-Gcode)
-* [Step 7. Extruder advanced guide](https://github.com/mehtaheino/MANU-3D-Printer/wiki/Step-7.-Extruder-advanced-guide)
-* [Discussion (Q&A) on GitHub](https://github.com/orgs/mehtaheino/discussions)
-
-## MANU Food 3D Printer, Piston Extrusion-Based Chocolate 3D Printer
+## MANU 3D Printer, an extrusion-based FFF printer
 * For chocolate Printer: https://github.com/mehtaheino/Chocolate-3D-Printer/wiki
 * Discussion (Q&A) on GitHub: https://github.com/orgs/mehtaheino/discussions
 
