@@ -15,11 +15,7 @@ Please feel free to reach out if you require assistance with our products or ser
 * Printer Documentation: https://github.com/mehtaheino/Chocolate-3D-Printer/wiki
 * Discussion (Q&A) on GitHub: https://github.com/orgs/mehtaheino/discussions
 
-## Table of Contents
-
-Please use the navigation menu to explore the comprehensive documentation for the MANU 3D Printer.
-
-## Home - GitHub Wiki Page
+## Home - GitHub Wiki Page / Documentation Page
 https://github.com/mehtaheino/Chocolate-3D-Printer/wiki
 
 ## MANU Food 3D Printer, Piston Extrusion-Based Chocolate 3D Printer
