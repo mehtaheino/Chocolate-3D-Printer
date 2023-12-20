@@ -24,7 +24,6 @@ https://github.com/mehtaheino/Chocolate-3D-Printer/wiki
 ## MANU 3D Printer, an extrusion-based FFF printer
 Please refer to the following links for documentation specific to the MANU extrusion-based FFF printer
 
-## MANU 3D Printer, an extrusion-based FFF printer
 * For chocolate Printer: https://github.com/mehtaheino/Chocolate-3D-Printer/wiki
 * Discussion (Q&A) on GitHub: https://github.com/orgs/mehtaheino/discussions
 
