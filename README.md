@@ -14,6 +14,7 @@ Please feel free to reach out if you require assistance with our products or ser
 
 * Printer Documentation: https://github.com/mehtaheino/Chocolate-3D-Printer/wiki
 * Discussion (Q&A) on GitHub: https://github.com/orgs/mehtaheino/discussions
+* Previous Wiki Page link (Printer Documentation): https://www.wiki.mehtaheino.com/
 
 ## Home - GitHub Wiki Page / Documentation Page
 https://github.com/mehtaheino/Chocolate-3D-Printer/wiki
