@@ -1,0 +1,4 @@
+M291 P"This will turn wifi on. Click OK to continue." S3
+M552 S0
+G4 P0
+M552 S1 ; turn networking ON

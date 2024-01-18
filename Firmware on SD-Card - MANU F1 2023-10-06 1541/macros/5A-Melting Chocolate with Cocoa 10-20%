@@ -1,0 +1,20 @@
+;Melting Chocolate with Cocoa 10-20% - Preheat till 43 degrees
+
+; This configuration has been considered on 08 Sept 2023
+;The fans were on at cooling till 26 deg. stage and turned off whene started heating till printing temperature.
+;Note>  Each type of cocolate has its own  printing and melting temperatureş (See the tables in the _ReadMe 1st [08.09.2023] .txt file
+
+;Stage 1 - Preheating till 43 degrees immediately
+;M116 P0 S0
+M291 P"Nozzle is Heating to 43 degrees Celsius." T0 S1 ;Report next action
+M104 S43 T0 ; Set Extruder Temperature without waiting
+M116 P0 S0
+
+
+;Stage 2 - Heated till 43 degrees and wait for 10 minutes to distribute heat
+M291 P"Nozzle is Preheated to 43 degrees Celsius." T0 S1 ;Report next action
+M291 P"Now stir the chocolate and load more if needed. Press OK button when you are ready" T0 S2 ;Report next action
+M291 P"Shake the cylinder to free trapped air. Press OK when ready." T0 S2 ;Report next action
+M291 P"Waiting for 10 minutes to distribute heat." T5 S0 ; Thsi si executed only after OK button is pressed in previous command
+G4 P600000
+M291 P"Shake the cylinder again to free trapped air. Press OK when ready." T0 S2 ;Report next action

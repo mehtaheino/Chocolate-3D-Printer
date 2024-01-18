@@ -1,0 +1,3 @@
+;M552: Set IP address, enable/disable network interface
+;M552 with no parameters reports the current network state and IP address.
+M552

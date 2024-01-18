@@ -1,0 +1,5 @@
+;M291 P"Extruding 1mm" T3 S0 ;Report next action
+M83 ; set extruder to relative
+T0
+G1 E1 F10
+M82 ;set extruder to absolute

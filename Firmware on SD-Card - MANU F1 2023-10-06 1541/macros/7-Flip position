@@ -1,0 +1,4 @@
+;M291 P"Extruding 1mm" T3 S0 ;Report next action
+G28 Z
+G28 X
+G1 X48 F1200

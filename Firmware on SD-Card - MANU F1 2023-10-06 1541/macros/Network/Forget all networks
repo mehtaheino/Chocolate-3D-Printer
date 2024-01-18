@@ -1,0 +1,5 @@
+M291 P"This will Forget all known/saved networks. Click OK to continue." S3
+M552 S0
+M588 S"*"
+M500
+M552 S1

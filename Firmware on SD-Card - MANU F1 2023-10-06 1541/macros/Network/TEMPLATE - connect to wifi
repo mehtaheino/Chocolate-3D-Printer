@@ -1,0 +1,6 @@
+;M291 P"This will save a network and connect to it. Click OK to continue." S3
+M291 P"M587 S''Wi-Fi network name'' P''Wi-Fi password'' ; configure network" S3
+M552 S0 ;Turn wifi off
+M587 S"Wi-Fi network name" P"Wi-Fi password" ; configure network
+M552 S1 ;Turn wifi on
+M550 ;Save settings

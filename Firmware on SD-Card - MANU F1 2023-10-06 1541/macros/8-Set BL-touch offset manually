@@ -1,0 +1,23 @@
+;G30 S-1 stop at offset
+;G31 P500 X0 Y0 Z1.9 for offset command
+
+;****init****
+M106 P0 S120 ; turn E-fan on
+G28
+G1 X100 Y80 F9000
+;M18 ;Shut down stepper motors
+T0
+;****Ask to continue****
+M291 P"Measure BLtouch - started. Click OK to continue." S3 ;Report next action
+;****do operation****
+G31 Z0 ;reset offset
+M400 ;wait for all actions to finish
+G1 X125 Y80 Z20 F9000 ;center and approach
+G30 S-1 ;probe one point and tell height
+M291 P"Change the G31 offset value in config.g to first layer height - reported value" T3 S1 ;Report next action
+;****shutdown****
+;M291 P"Done. Shutting down heater. Remember to clean the printing area of filament pieces." T5 S0 ;Report next action
+;M104 S0 T0 ; Set Extruder Temperature without waiting
+;M106 P0 S0 ; turn E-fan off
+M82 ;set extruder to absolute
+M18 X Y E ;Shut down stepper motors X Y E

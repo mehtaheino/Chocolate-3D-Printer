@@ -1,0 +1,6 @@
+M291 P"This will turn on access point with name DuetSSID and password password Click OK to continue." S3
+M552 S0 ; Turn network to idle
+G4 P2
+M589 S"DuetSSID" P"password" I192.168.0.1 C1 ;Configure access point
+M552 S2 ; Enable access point
+M500 ; Save settings

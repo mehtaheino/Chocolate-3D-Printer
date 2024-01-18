@@ -1,0 +1,2 @@
+M291 P"This will turn wifi off. Click OK to continue." S3
+M552 S0 ; turn networking to idle

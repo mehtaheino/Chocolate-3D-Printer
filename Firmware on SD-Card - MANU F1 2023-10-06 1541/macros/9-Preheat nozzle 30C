@@ -1,0 +1,4 @@
+;Preheat 25
+M104 S30 T0 ; Set Extruder Temperature without waiting
+;M106 P0 S120 ; turn E-fan on
+M291 P"Preheating nozzle to 30 degrees Celsius." T3 S0 ;Report next action

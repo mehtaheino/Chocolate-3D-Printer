@@ -1,0 +1,40 @@
+;Printing Chocolate with Cocoa 0-20%
+
+;------------------------------------------------------------------------------------
+; Needs to home before getting ready to print
+; homeall.g
+; MHI3D
+G91                     ; relative positioning
+G1 H1 Z215 F1500        ; move Z up stopping at the endstop
+G1 H2 Z-0.5 F1200       ; go back a few mm
+G1 H1 Z215 F600         ; move slowly to Z axis endstop once more (second pass)
+G1 H1 X-205 Y-155 F5000 ; move quickly to X and Y axis endstops and stop there (first pass)
+G1 H2 X5 Y5 F3000       ; go back a few mm
+G1 H1 X-205 Y-155 F600  ; move slowly to X and Y axis endstops once more (second pass)
+G90                     ; absolute positioning
+G92 X0 Y0 Z210          ; set Z position to axis maximum (you may want to adjust this)
+;------------------------------------------------------------------------------------
+
+;Stage 3 - Cool down to 26 degrees and wait for 30 minutes. Should be done after extrusion flipped DOWN.
+M291 P"Now Cooling down to 26 degrees Celsius, then wait for 30 minutes for tempering type 4 crystals. Please flip cylinder and close the door. Then press OK when ready." T0 S2 ;Report next action
+M104 S26 T0 ; Set Extruder Temperature 26 degrees and wait for 30 minutes for tempering type 4 crystals
+M106 P0 S120 ; turn E-fan ON
+
+;Relative positioning on
+G90
+G0 X200 Y0 Z25  ; move closer to fan
+M106 P0 S255    ; turn fan on to full blast
+M106 P1 S255    ; turn fan on to full blast
+G4 P1800000     ; run fans for 5 minutes at full speed
+M106 P0 S0      ; turn E-fan OFF
+M106 P1 S0      ; turn E-fan OFF
+M116 P0 S0      ; reach temp (this command do not respond at temp. below 41 deg. Celsius)
+
+;Stage 4 - Heat back till 29 degrees and wait for 30 minutes
+M291 P"Heating back till 29 degrees, then wait for 30 minutes to melt type 4 crystals and obtain type 5 (perfect crystalization)." T0 S2 ;Report next action
+M104 S29 T0 ; Set Extruder Temperature 29 degrees and wait for 10 minutes for tempering type 4 crystals
+M116 P0 S0 ;reach temp
+M291 P"Waiting for 30 minutes to melt type 4 crystals and obtain type 5 (perfect crystalization)." T5 S0 ;Report next action
+G4 P1800000
+
+M291 P"Ready for printing, BUT: Please extrude 1 mm step-by-step until little a chocolate comes out." T0 S2 ;Report next action
